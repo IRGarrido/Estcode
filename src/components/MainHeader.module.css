@@ -1,0 +1,22 @@
+.mainHeader {
+    background-color: #003F5C;
+    width: 100%;
+    height: 10rem;
+    border-bottom: 3px solid #E0E0E0;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+}
+
+.mainTitle {
+    font-size: 64px;
+    line-height: 64px;
+    font-family: 'Source Code Pro';
+}
+
+.mainTitleHighlight {
+    color: #5CE1E6;
+}
