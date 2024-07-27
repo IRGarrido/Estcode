@@ -1,0 +1,26 @@
+.mainContainer {
+    margin: 5rem auto;
+    width: 80%;
+    color: #e0e0e0;
+    height: fit-content;
+}
+
+.mainContainer h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2rem;
+    
+}
+
+.mainContainer mark {
+    background-color: transparent;
+    color: #5CE1E6;
+}
+
+.mainContainer p {
+    text-indent: 2rem;
+    text-align: justify;
+    font-size: 24px;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+}

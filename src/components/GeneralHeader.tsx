@@ -1,7 +1,7 @@
 import HeaderButton from "./HeaderButton"
-import Styles from './MainHeader.module.css'
+import Styles from './GeneralHeader.module.css'
 
-export default function MainHeader() {
+export default function GeneralHeader() {
     
     return (
             <header className={Styles.mainHeader}>
@@ -12,6 +12,8 @@ export default function MainHeader() {
                         <HeaderButton onClickFunction={() => console.log("Mode")}>Mode</HeaderButton>
                     </div>
                 </div>
+    
+        
             </header>        
     );
 }
