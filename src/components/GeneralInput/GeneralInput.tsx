@@ -5,12 +5,12 @@ interface IProps {
     type:string;
     onChangeFunction: any;
     value?: string |number;
-    placeholder?: string
-    submitText?: string 
+    submitText?: string;
+    onClickSubmit: (arg: any) => void;
 }
 
 
-export default function GenenalInput(props : IProps) {
+export default function GeneralInput(props : IProps) {
     return(
         <form className={Styles.inputContainer}>
             <label className={Styles.inputLabel}>{props.text}</label>
@@ -18,9 +18,8 @@ export default function GenenalInput(props : IProps) {
                 <input
                     type={props.type} 
                     onChange={props.onChangeFunction} 
-                    value={props.value}
-                    placeholder={props.placeholder}/>
-                <input type="submit" value={(props.submitText != null)? props.submitText : "Enviar"}/>
+                    value={props.value}/>
+                <input type="submit" value={(props.submitText != null)? props.submitText : "Enviar"} onClick={props.onClickSubmit}/>
             </div>
         </form>
     )
