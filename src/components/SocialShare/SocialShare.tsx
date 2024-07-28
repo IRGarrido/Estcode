@@ -13,7 +13,7 @@ export default function SocialShare(arg: { url: string }) {
                     <FacebookIcon />
                 </FacebookShareButton>
                 <TwitterShareButton url={arg.url} hashtags={["Estcode", "code", "programming"]}>
-                    <img src="/public/x_icon.svg" alt="Compartilhe com o X" className={Styles.logoX} />
+                    <img src="/x_icon.svg" alt="Compartilhe com o X" className={Styles.logoX} />
                 </TwitterShareButton>
                 <WhatsappShareButton url={arg.url}>
                     <WhatsappIcon />

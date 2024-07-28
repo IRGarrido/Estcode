@@ -1,0 +1,32 @@
+.resultContainer {
+    width: 100%;
+    margin: 4rem auto;
+    border-radius: 20px;
+    border: 3px solid #e0e0e0;
+    text-align: center;
+    background-color: #003F5C;
+    text-align: justify;
+    flex-wrap: wrap;
+    transition: 1s;
+
+}
+
+.resultContent {
+    padding: 2rem 5rem;
+    text-indent: 2rem;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: justify;
+}
+
+.resultContent a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #00B2A9;
+    transition: .3s;
+}
+
+.resultContent a:hover {
+    color: #5CE1E6;
+    font-weight: bold
+}

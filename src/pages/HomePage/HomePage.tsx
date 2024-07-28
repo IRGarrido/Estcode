@@ -2,6 +2,7 @@ import { ChangeEvent, useEffect, useState } from "react";
 import GeneralHeader from "../../components/GeneralHeader/GeneralHeader";
 import GeneralMain from "../../components/GeneralMain/GeneralMain";
 import GeneralInput from "../../components/GeneralInput/GeneralInput";
+import InputAxios from "../../components/InputAxios/InputAxios";
 import Styles from "./HomePage.module.css"
 import GeneralFooter from "../../components/GeneralFooter/GeneralFooter";
 import SocialShare from "../../components/SocialShare/SocialShare";
@@ -36,18 +37,18 @@ export default function HomePage() {
                 <p style={{ color: darkMode ? '#e0e0e0' : '#151520' }}>A programação é um ramo vasto, repleto de diferentes tecnologias. Muitas vezes, os interessados na área se sentem perdidos, sem saber como começar. Uma solução para isso é ter onde consultar as principais linguagens de programação. </p>
                 <p style={{ color: darkMode ? '#e0e0e0' : '#151520' }}>Aqui, só precisamos do nome da linguagem que você quer conhecer. Vamos te ajudar com primeiro passo no mundo dev.</p>
                 <h2 style={{ color: darkMode ? '#e0e0e0' : '#151520' }}>Que linguagem você quer conhecer hoje?</h2>
-                {/* <InputAxios/> */}
-                <GeneralInput
+                <InputAxios />
+                {/* <GeneralInput
                     text="Eu quero conhecer..."
                     type="text"
                     onChangeFunction={handleInput}
                     value={linguagem}
                     submitText="Descobrir"
                     onClickSubmit={handleSubmit}
-                />
+                /> */}
             </GeneralMain>
 
-            <SocialShare url={page} darkMode={darkMode} setDarkMode={setDarkMode} />
+            <SocialShare url={page} />
             <GeneralFooter />
         </div>
     );
