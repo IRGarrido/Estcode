@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ChangeEvent, useState } from "react";
 import GenenalInput from "../GeneralInput/GeneralInput";
-import { Toaster, toast } from "sonner";
+import { toast, Toaster } from "sonner";
 import Styles from "./InputAxios.module.css"
 
 
@@ -11,12 +11,7 @@ export default function InputAxios() {
     const [contentUrl, setContentUrl] = useState<string>("");
 
     const url = "https://www.searchapi.io/api/v1/search";
-    // const params = {
-    //     "engine": "google",
-    //     "q": ` ${linguagem} programming language description`,
-    //     "location": "Brazil",
-    //     "api_key": "yWWevt2E5gB4DHnEXf4mhvJa",
-    // };
+
     const params = {
         "engine": "google",
         "q": `descrição linguagem programação ${linguagem}`,
@@ -27,10 +22,6 @@ export default function InputAxios() {
     const postSearch = async () => {
         await axios.get(url, { params })
             .then(response => {
-                // const answerBox = response.data?.answer_box
-                // const newContent = answerBox?.snippet != null
-                //     ? answerBox.snippet
-                //     : "Nenhum resultado encontrado para essa entrada. Tente novamente"
 
                 console.log(response.status);
                 console.log(response.data);
@@ -51,7 +42,7 @@ export default function InputAxios() {
 
                 setContent(newContent);
                 setContentUrl(newContentUrl)
-                toast.success("Resultado carregado");
+                toast.success('Resultado encontrado!')
             }).catch(error => {
                 console.error("Falha na solicitacao", error);
                 toast.error("Falha na solicitação")
@@ -64,7 +55,7 @@ export default function InputAxios() {
 
     const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
         e.preventDefault();
-        toast('Requisição enviada')
+        toast.info('Pesquisa enviada. Aguarde...');
         postSearch();
     }
 
@@ -72,7 +63,6 @@ export default function InputAxios() {
 
     return (
         <>
-            <Toaster />
             <GenenalInput
                 text="Eu quero conhecer..."
                 type="text"
@@ -85,6 +75,8 @@ export default function InputAxios() {
             <div className={Styles.resultContainer} style={{ display: (content != "") ? "block" : "none" }}>
                 <p className={Styles.resultContent}>{content}{verMais}</p>
             </div>
+
+            <Toaster richColors position="bottom-right" />
         </>
     )
 }

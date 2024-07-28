@@ -9,6 +9,25 @@
     line-height: 1.5rem;
 }
 
+.institutions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
 .footerContainer p {
     color: #B0B0B0;
+}
+
+@media (max-width: 680px) {
+
+    .footerContainer {
+        height: 13.5rem;
+    }
+
+    .institutions {
+        flex-direction: column;
+        text-align: center;
+    }
 }

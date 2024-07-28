@@ -3,6 +3,7 @@
     width: 100%;
     height: 10rem;
     border-bottom: 3px solid #b0b0b0;
+    color: #fff;
 }
 
 .headerContainer {
@@ -26,3 +27,28 @@
 .mainTitleHighlight {
     color: #5CE1E6;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 710px) {
+
+    .mainHeader {
+        height: 13.5rem;
+    }
+
+    .headerContainer {
+        display: block;
+        text-align: center;
+    }
+
+    .mainTitle {
+        justify-content: center;
+        margin-bottom: .7rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .mainTitle {
+        font-size: 48px;
+    }
+}
+

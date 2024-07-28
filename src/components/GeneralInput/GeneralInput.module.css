@@ -66,3 +66,34 @@
     color: #003F5C ;
     background-color: #5CE1E6;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 960px) {
+
+    .inputContent {
+        padding: 0;
+        text-align: center;
+    }
+
+    .inputLabel {
+        text-align: center;
+        padding-inline: 0;
+
+    }
+
+    .inputContent input[type="text"] {
+        border-radius: 48px;
+        margin-bottom: 1rem;
+    }
+
+    .inputContent input[type="submit"] {
+        width: 33%;
+        position: static;
+    }
+}
+
+@media (max-width: 425px) {
+    .inputLabel {
+        font-size: 24px;
+    }
+}
