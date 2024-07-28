@@ -1,11 +1,14 @@
 .footerContainer {
     margin-top: 5rem;
-    border-top: 3px solid #e0e0e0;
+    border-top: 3px solid #b0b0b0;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     height: 22vh;
-    color: #B0B0B0;
     line-height: 1.5rem;
+}
+
+.footerContainer p {
+    color: #B0B0B0;
 }

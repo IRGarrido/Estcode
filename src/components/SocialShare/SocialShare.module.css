@@ -1,0 +1,20 @@
+.logoX {
+    height: 63.99px;
+    width: 63.99px;
+    background-color: #b0b0b0;
+}
+
+.socialShareText {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    color: #00B2A9;
+    font-weight: bold;
+}
+
+.sharingContainer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
