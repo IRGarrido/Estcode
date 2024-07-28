@@ -1,4 +1,6 @@
 import HeaderButton from "../HeaderButton/HeaderButton"
+import Navbar from "../Navbar/Navbar"
+import { NavLink } from "react-router-dom";
 import Styles from './GeneralHeader.module.css'
 
 
@@ -24,18 +26,24 @@ export default function GeneralHeader(props: IProps) {
                         Est<span className={Styles.mainTitleHighlight}>.code</span></h1>
                 </div>
 
+
                 <div className={Styles.headerButtons}>
-                    <HeaderButton onClickFunction={() => console.log("Home")}>
-                        <i className="fa fa-home" style={{ fontSize: '32px' }} />
-                    </HeaderButton>
+
+                    <NavLink to='/' end>
+                        <HeaderButton>
+                            <i className="fa fa-home" style={{ fontSize: '32px' }} />
+                        </HeaderButton>
+                    </NavLink>
 
                     <HeaderButton onClickFunction={() =>
                         props.setDarkMode(!props.darkMode)}>
                         {modeIcon}
                     </HeaderButton>
                 </div>
-            </div>
 
-        </header>
+            </div>
+            <Navbar></Navbar>
+
+        </header >
     );
 }

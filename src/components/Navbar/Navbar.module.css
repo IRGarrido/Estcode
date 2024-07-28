@@ -1,0 +1,26 @@
+.navbarContainer {
+    width: 100%;
+    background-color: #00B2A9;
+    height: 2.5rem;
+}
+
+.pagesList {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.pagesList h3{
+    border: none;
+    line-height: 2.5rem;
+    color: #003F5C;
+    transition: .5s;
+}
+
+.pagesList h3:hover{
+    font-size: 1.5rem;
+}
+
+.pagesList a {
+    text-decoration: none;
+}
