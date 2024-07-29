@@ -40,7 +40,6 @@ export default function GeneralHeader(props: IProps) {
                         {modeIcon}
                     </HeaderButton>
                 </div>
-
             </div>
             <Navbar></Navbar>
 

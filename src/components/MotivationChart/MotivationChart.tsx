@@ -1,6 +1,11 @@
 import Styles from './MotivationChart.module.css'
 
-export default function MotivationChart() {
+interface IProps {
+    darkMode: boolean,
+    setDarkMode: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export default function MotivationChart(props: IProps) {
 
     const personalidades = [
         {
@@ -42,7 +47,8 @@ export default function MotivationChart() {
     })
 
     return (
-        <div className={Styles.motivationPage}>
+        <div className={Styles.motivationPage}
+            style={{ color: props.darkMode ? '#e0e0e0' : '#151520' }}>
             <h2>Eles caminharam para que você podesse voar</h2>
 
             <div className="cards">
