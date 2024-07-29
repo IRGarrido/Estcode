@@ -1,7 +1,12 @@
 # PROJETO EST-CODE
 
-    Este projeto é uma página que 
+    Este projeto é uma página para iniciantes no ramo da computação
 
+Bibliotecas e APIS usadas: axios, router-react-dom, sonner, react-share e searchAPI.
+
+
+
+## README DO REACT
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
